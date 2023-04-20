@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <script defer src="./js/script.js"></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container align-center">
+        <h1 class="heading"><img src="./images/logo.svg" alt="SPLITTER" /></h1>
+        <div class="calculator-box">
+          <div class="inputs-box">
+            <form class="inputs-form">
+              <div>
+                <label for="bill" class="form-label">Bill</label>
+                <input
+                  id="bill"
+                  type="text"
+                  inputmode="numeric"
+                  placeholder="0"
+                  name="bill"
+                  required
+                  aria-describedby="bill-alert"
+                />
+                <img class="input-icon" src="./images/icon-dollar.svg" alt="Dollar Sign" />
+                <p
+                  id="bill-alert"
+                  class="form-message bill-message"
+                  aria-live="polite"
+                ></p>
+              </div>
+              <div>
+                <label for="tip-percentages" class="form-label"
+                  >Select Tip %</label
+                >
+                <div
+                  id="tip-percentages"
+                  class="tip-percentages"
+                  aria-describedby="tip-alert"
+                >
+                  <input class="tip-btn" type="button" value="5%"  data-tip="5"/>
+                  <input class="tip-btn" type="button" value="10%" data-tip="10"/>
+                  <input class="tip-btn" type="button" value="15%" data-tip="15"/>
+                  <input class="tip-btn" type="button" value="25%" data-tip="25"/>
+                  <input class="tip-btn" type="button" value="50%" data-tip="50"/>
+                  <input id="tip-custom" type="text" inputmode="numeric" placeholder="Custom" />
+                </div>
+                <p
+                  id="tip-alert"
+                  class="form-message tip-message"
+                  aria-live="polite"
+                ></p>
+              </div>
+              <div>
+                <label for="people" class="form-label">Number of People</label>
+                <input
+                  id="people"
+                  type="text"
+                  inputmode="numeric"
+                  placeholder="0"
+                  required
+                  aria-describedby="people-alert"
+                />
+                <img class="input-icon" src="./images/icon-person.svg" alt="Person Icon" />
+                <p
+                  id="people-alert"
+                  class="form-message people-message"
+                  aria-live="polite"
+                ></p>
+              </div>
+            </form>
+          </div>
+          <div class="results-box">
+            <div>
+
+              <div class="results">
+                <div>
+                  <p class="result-text">Tip Amount <br><span>/ person</span></p>
+                  
+                </div>
+                <div>
+                  <p class="result-num">
+                    &dollar;<span class="tip-result">0.00</span>
+                  </p>
+                </div>
+            </div>
+              <div class="results">
+                <div>
+                  <p class="result-text">Total <br><span>/ person</span></p>
+                  
+                </div>
+                <div>
+                  <p class="result-num">
+                    &dollar;<span class="total-result">0.00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+              <button class="reset-btn" type="reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Alejandro Perdomo</a>.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+@media (max-width: 26em) {
+  .heading {
+    margin: 4rem 0;
+  }
+
+  .calculator-box {
+    grid-template-columns: 1fr;
+    padding: 2.5rem;
+    row-gap: 2.5rem;
+  }
+
+  .inputs-box {
+    padding: 1rem;
+  }
+
+  .tip-percentages {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 1.6rem;
+    row-gap: 1.6rem;
+  }
+
+  .tip-percentages input {
+    padding: 0.4rem 1.5rem;
+  }
+
+  .tip-percentages input::placeholder {
+    text-align: right;
+  }
+
+  .results-box {
+    padding: 3rem 2.5rem 2.5rem;
+  }
+
+  .results:nth-child(1) {
+    margin: 0;
+  }
+
+  .results {
+    margin: 0;
+    margin-bottom: 3rem !important;
+  }
+
+  .result-num {
+    font-size: 3.2rem;
+  }
+}
