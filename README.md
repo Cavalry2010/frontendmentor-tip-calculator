@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-tip-calculator-with-flexbox-css-grid-and-javascript-bdxlwBMVe7)
 - Live Site URL: [Tip Calculator](https://tip-calculator-alejandro.netlify.app)
 
 ## My process
